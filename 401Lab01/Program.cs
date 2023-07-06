@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+class labB
+{
+    static void StartSequence()
+    {
+        
+    }
+
+    static void Main(string[] args)
+    {
+        StartSequence();
+    }
+}
