@@ -2,7 +2,7 @@
 ﻿
 class labB
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
         try
         {
@@ -18,7 +18,7 @@ class labB
         }
     }
 
-    static void StartSequence()
+    public static void StartSequence()
     {
         Console.WriteLine("Please enter a number greater than zero:");
         int size = Convert.ToInt32(Console.ReadLine());
@@ -35,7 +35,7 @@ class labB
         Console.WriteLine($"Quotient: {quotient}");
     }
 
-    static void Populate(int[] array)
+    public static void Populate(int[] array)
     {
         for (int i = 0; i < array.Length; i++)
         {
@@ -45,7 +45,7 @@ class labB
         }
     }
 
-    static int GetSum(int[] array)
+    public static int GetSum(int[] array)
     {
         int sum = 0;
         foreach (int num in array)
@@ -61,7 +61,7 @@ class labB
         return sum;
     }
 
-    static int GetProduct(int[] array, int sum)
+    public static int GetProduct(int[] array, int sum)
     {
         Console.WriteLine($"Please select a random number between 1 and {array.Length}:");
         int index = Convert.ToInt32(Console.ReadLine()) - 1;
@@ -75,7 +75,7 @@ class labB
         return product;
     }
 
-    static decimal GetQuotient(int product)
+    public static decimal GetQuotient(int product)
     {
         Console.WriteLine($"Please enter a number to divide your product {product} by:");
         decimal dividend = Convert.ToDecimal(Console.ReadLine());
